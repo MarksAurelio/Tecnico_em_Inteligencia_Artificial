@@ -1,0 +1,96 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7e8;
+    color: #444;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 2px solid #ffcc00;
+}
+
+.header-logo {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 2.8em;
+    color: #ffcc00;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 40px 0;
+}
+
+section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffe580;
+    padding-bottom: 10px;
+}
+
+/* Seção de Suporte */
+.support-section {
+    text-align: center;
+    background-color: #ffe580;
+}
+
+.cvv-info {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #d4ac0d;
+}
+
+/* Botões de Ação */
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    background-color: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e6b800;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #444;
+    color: #fff;
+    font-size: 0.9em;
+}

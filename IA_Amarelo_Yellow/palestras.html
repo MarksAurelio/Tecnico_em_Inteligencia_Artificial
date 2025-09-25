@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestras: IA e Prevenção - Setembro Amarelo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos básicos para simular o layout de HQ (sem animações complexas) */
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* Fonte que lembra HQ */
+            background-color: #f0f8ff; /* Cor de fundo suave */
+            color: #333;
+            padding-top: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 15px;
+        }
+        header {
+            background-color: #fff;
+            padding: 15px 0;
+            border-bottom: 3px solid #ffd700; /* Borda amarela para Setembro Amarelo */
+            text-align: center;
+        }
+        header h1 {
+            color: #4682b4;
+            margin-bottom: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Para quebra de linha em telas pequenas */
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #36a420; /* Verde para remeter a "vida" */
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #ffd700;
+            color: #fff;
+        }
+        .comic-panel {
+            background-color: #fff;
+            border: 5px solid #333; /* Borda grossa de HQ */
+            border-radius: 10px;
+            margin-bottom: 30px;
+            padding: 20px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden; /* Garante que o conteúdo não saia da borda */
+        }
+        .comic-panel h2 {
+            color: #8a2be2; /* Cor vibrante para títulos */
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .comic-panel p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .message-balloon {
+            background-color: #ffd700; /* Balão amarelo para Setembro Amarelo */
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 20px;
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            transform: rotate(5deg);
+            font-weight: bold;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            z-index: 10;
+        }
+        .card {
+            border: 3px solid #4682b4; /* Borda do card */
+            border-radius: 8px;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px); /* Efeito "saltar" ao passar o mouse */
+        }
+        .card-title {
+            color: #8a2be2;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background-color: #fff;
+            border-top: 3px solid #ffd700;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Palestras do Futuro: Desvendando a IA com Carinho</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="palestras.html">Palestras e IA</a></li>
+                    <li><a href="patrocinadores.html">Patrocinadores</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+
+        <div class="comic-panel">
+            <span class="message-balloon">Aprender faz bem!</span>
+            <h2>Seu Guia para o Universo da Inteligência Artificial!</h2>
+            <p>Descubra como a IA está transformando o mundo e como podemos usá-la para construir um futuro mais empático e com mais bem-estar. Cada palestra é uma peça do quebra-cabeça do conhecimento, com um toque especial de motivação do Setembro Amarelo!</p>
+            <p><strong>Lembre-se:</strong> Buscar conhecimento é cuidar de si. Você é importante!</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">1. Fundamentos de IA</h5>
+                        <p class="card-text">O ponto de partida! Entenda o que é Inteligência Artificial, sua história e seus principais conceitos. Prepare-se para desvendar o futuro!</p>
+                        <p class="text-warning small mt-2"><em>"O primeiro passo em direção ao conhecimento é sempre o mais inspirador!"</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">2. Fundamentos de Machine Learning</h5>
+                        <p class="card-text">Como as máquinas aprendem? Descubra os segredos do Aprendizado de Máquina, os algoritmos e suas aplicações práticas no dia a dia.</p>
+                        <p class="text-warning small mt-2"><em>"Cada aprendizado nos torna mais fortes e preparados!"</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">3. Arquitetura de Computadores</h5>
+                        <p class="card-text">Por dentro da máquina! Compreenda como os computadores são construídos e como essa estrutura suporta as tecnologias de IA mais avançadas.</p>
+                        <p class="text-warning small mt-2"><em>"Nossa estrutura interna nos permite ir além. Cuide dela!"</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">4. CPU e GPU: Cérebros Digitais</h5>
+                        <p class="card-text">Qual a diferença entre esses dois cérebros dos computadores? Entenda como eles trabalham juntos para processar informações, especialmente em IA.</p>
+                        <p class="text-warning small mt-2"><em>"Cada parte de você tem um valor e uma função importante!"</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">5. Para que serve a CUDA?</h5>
+                        <p class="card-text">Acelere o processamento! Conheça a tecnologia CUDA e como ela otimiza o uso das GPUs para tarefas complexas de inteligência artificial.</p>
+                        <p class="text-warning small mt-2"><em>"Potencialize seu brilho, explore novas ferramentas!"</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">6. GPT's: A Nova Era da Conversação</h5>
+                        <p class="card-text">Explore os modelos de linguagem como o GPT, que revolucionaram a forma como interagimos com a IA, desde chatbots até criação de conteúdo.</p>
+                        <p class="text-warning small mt-2"><em>"Comunique-se, expresse-se, sua voz importa muito!"</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">7. Cuidados com a IA: Uso Consciente</h5>
+                        <p class="card-text">Como usar a IA de forma segura e ética? Discussão sobre os riscos, vieses e a importância da responsabilidade no desenvolvimento e uso da inteligência artificial.</p>
+                        <p class="text-warning small mt-2"><em>"Cuidar de si é o primeiro passo para cuidar do amanhã!"</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">8. Ética na IA: Valores e Decisões</h5>
+                        <p class="card-text">Mergulhe nos dilemas éticos da IA: privacidade, discriminação, impacto social. Aprenda a construir sistemas justos e benéficos para a humanidade.</p>
+                        <p class="text-warning small mt-2"><em>"Nossas escolhas constroem o mundo que queremos viver!"</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">9. Rede de Computadores e Cloud</h5>
+                        <p class="card-text">A base da conectividade! Entenda como as redes e a computação em nuvem permitem que a IA funcione em escala global e esteja acessível a todos.</p>
+                        <p class="text-warning small mt-2"><em>"Estamos todos conectados, peça ajuda se precisar. Você não está sozinho!"</em></p>
+                    </div>
+                </div>
+            </div>
+
+        </div> <div class="comic-panel mt-5">
+            <h2>Mensagem do Setembro Amarelo</h2>
+            <p class="text-center" style="font-size: 1.2em; font-weight: bold; color: #ff6347;">
+                "A vida é a sua história mais preciosa. Não hesite em compartilhar seus capítulos mais difíceis, pois há sempre alguém pronto para ouvir e ajudar. Falar é a melhor solução!"
+            </p>
+            <p class="text-center">
+                Se precisar de apoio emocional, ligue <strong>188</strong> (CVV) ou procure um profissional de saúde. Sua vida tem valor.
+            </p>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Projeto Integrador SENAC. Cuidando do conhecimento e do bem-estar.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

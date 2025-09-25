@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infográfico - Rota de Aprendizagem em IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Palette: Energetic & Playful -->
+    <!-- NEITHER Mermaid JS NOR SVG were used in this output. -->
+
+    <div class="container mx-auto p-4 md:p-8">
+        
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-black text-gray-800 uppercase">Rota de Aprendizagem</h1>
+            <p class="text-2xl md:text-3xl font-bold text-[#FF4E50]">Técnico em Inteligência Artificial</p>
+        </header>
+
+        <main class="space-y-12">
+
+            <!-- Módulo 1: Fundamentos -->
+            <section id="modulo1" class="p-6 md:p-8 bg-white rounded-2xl shadow-lg">
+                <div class="flex items-center mb-4">
+                    <span class="text-5xl mr-4">💻</span>
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Módulo 1: Fundamentos de Hardware e Arquitetura</h2>
+                        <p class="text-gray-600">O objetivo deste módulo é compreender a base física e estrutural que torna a computação e a IA possíveis.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <h3 class="font-bold text-xl text-[#FC913A] mb-2">Arquitetura de Computadores</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li><strong>Barramentos:</strong> Vias de comunicação para Dados, Endereços e Controle.</li>
+                            <li><strong>Tipos de Arquitetura:</strong> Estudo de RISC e CISC.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <h3 class="font-bold text-xl text-[#FC913A] mb-2">Processamento e Memória</h3>
+                         <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li><strong>Processadores:</strong> Diferenças cruciais entre CPU e GPU.</li>
+                            <li><strong>Modelos de Rede:</strong> Análise de Von Neumann e Harvard.</li>
+                            <li><strong>Hierarquia de Memória:</strong> Registradores, RAM e Armazenamento (SSD/HD).</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Módulo 2: Python -->
+            <section id="modulo2" class="p-6 md:p-8 bg-white rounded-2xl shadow-lg">
+                <div class="flex items-center mb-4">
+                     <span class="text-5xl mr-4">🐍</span>
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Módulo 2: Dominando a Linguagem Python</h2>
+                        <p class="text-gray-600">Foco no desenvolvimento de algoritmos e no domínio das ferramentas e bibliotecas que formam o ecossistema de IA em Python.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-6">
+                    <div class="space-y-6">
+                        <div class="bg-gray-100 p-6 rounded-lg">
+                            <h3 class="font-bold text-xl text-[#F9D423] mb-2">Ambiente de Desenvolvimento</h3>
+                            <p class="text-gray-700">Configuração do ambiente profissional para garantir projetos organizados e reprodutíveis, usando `venv`, VS Code e Jupyter.</p>
+                        </div>
+                        <div class="bg-gray-100 p-6 rounded-lg">
+                            <h3 class="font-bold text-xl text-[#F9D423] mb-2">Lógica de Programação</h3>
+                            <p class="text-gray-700">Construção da base lógica com estruturas de dados (listas, tuplas, dicionários), controle de fluxo, funções e tratamento de exceções.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl text-center text-[#F9D423] mb-2">Ecossistema de Bibliotecas Essenciais</h3>
+                        <p class="text-center text-gray-600 mb-4">Python se destaca por suas bibliotecas poderosas. O gráfico abaixo mostra as áreas de foco do aprendizado, cobrindo desde a manipulação de dados até a criação de aplicações web interativas.</p>
+                        <div class="chart-container">
+                            <canvas id="librariesChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Módulo 3: Ferramentas Fundamentais -->
+            <section id="modulo3" class="p-6 md:p-8 bg-white rounded-2xl shadow-lg">
+                <div class="flex items-center mb-4">
+                     <span class="text-5xl mr-4">🧠</span>
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Módulo 3: Ferramentas Fundamentais da IA</h2>
+                         <p class="text-gray-600">Aplicação dos pilares teóricos que sustentam os algoritmos de inteligência artificial.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 text-center">
+                    <div class="bg-[#FF4E50] text-white p-6 rounded-lg">
+                        <h3 class="font-black text-2xl mb-2">Matemática e Lógica</h3>
+                        <p class="opacity-90">Aplicação de funções de lógica matemática, a base para a construção de modelos de IA inteligentes e eficazes.</p>
+                    </div>
+                    <div class="bg-[#FC913A] text-white p-6 rounded-lg">
+                        <h3 class="font-black text-2xl mb-2">Estatística Aplicada</h3>
+                        <p class="opacity-90">Utilização de conceitos estatísticos para analisar dados, validar hipóteses e extrair insights valiosos em projetos de IA.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Módulo 4: Jornada Continua -->
+            <section id="modulo4" class="p-6 md:p-8 bg-white rounded-2xl shadow-lg">
+                <div class="flex items-center mb-4">
+                    <span class="text-5xl mr-4">🚀</span>
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Módulo 4: Onde a Jornada Continua</h2>
+                        <p class="text-gray-600">Após construir a base, o curso avança para a aplicação de habilidades em cenários do mundo real.</p>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <div class="relative">
+                        <div class="absolute left-0 top-0 h-full w-1 bg-[#F9D423] ml-4"></div>
+                        <div class="flex items-center mb-8">
+                            <div class="bg-[#F9D423] rounded-full w-9 h-9 z-10 flex items-center justify-center">
+                                <span class="text-xl font-bold text-white">1</span>
+                            </div>
+                            <div class="ml-6 bg-gray-100 p-4 rounded-lg w-full">
+                                <h3 class="font-bold text-lg text-gray-800">Desenvolvimento de Banco de Dados</h3>
+                                <p class="text-gray-600">Estruturação e manipulação de bancos de dados para armazenar e consultar grandes volumes de informação.</p>
+                            </div>
+                        </div>
+                         <div class="flex items-center">
+                            <div class="bg-[#F9D423] rounded-full w-9 h-9 z-10 flex items-center justify-center">
+                               <span class="text-xl font-bold text-white">2</span>
+                            </div>
+                            <div class="ml-6 bg-gray-100 p-4 rounded-lg w-full">
+                                <h3 class="font-bold text-lg text-gray-800">Integração com Serviços</h3>
+                                <p class="text-gray-600">Conexão das aplicações de IA com ferramentas de mercado como Power BI para visualização e Stripe para pagamentos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="text-center mt-12 py-6 border-t">
+            <p class="text-gray-600">&copy; 2025 Rota de Aprendizagem em Inteligência Artificial.</p>
+        </footer>
+    </div>
+
+    <script>
+        function wrapLabel(label) {
+            const maxLength = 16;
+            if (label.length <= maxLength) {
+                return label;
+            }
+            
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+
+            words.forEach(word => {
+                if ((currentLine + word).length > maxLength) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            });
+            lines.push(currentLine.trim());
+            return lines;
+        }
+
+        const ctx = document.getElementById('librariesChart').getContext('2d');
+        const rawLabels = ['Dados e Análise', 'Visualização', 'Web e Aplicações'];
+        const processedLabels = rawLabels.map(wrapLabel);
+        
+        new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: processedLabels,
+                datasets: [{
+                    label: 'Foco de Aprendizagem',
+                    data: [90, 80, 75],
+                    backgroundColor: 'rgba(255, 78, 80, 0.2)',
+                    borderColor: '#FF4E50',
+                    pointBackgroundColor: '#FF4E50',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#FF4E50'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        angleLines: {
+                            color: '#e2e8f0'
+                        },
+                        grid: {
+                            color: '#e2e8f0'
+                        },
+                        pointLabels: {
+                            font: {
+                                size: 14,
+                                weight: 'bold'
+                            },
+                            color: '#475569'
+                        },
+                        ticks: {
+                            backdropColor: 'rgba(255, 255, 255, 0.75)',
+                             color: '#64748b'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                  return label.join(' ');
+                                } else {
+                                  return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
