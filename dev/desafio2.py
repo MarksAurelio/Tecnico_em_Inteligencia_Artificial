@@ -1,4 +1,5 @@
 import os
+
 # print(""" PythonSchools """)
 
 # # variavel
@@ -13,4 +14,4 @@ import os
 # os.system("notepad")
 # os.system("explorer")
 os.system("snippingtool")
-os.system('osk')
+os.system("osk")
