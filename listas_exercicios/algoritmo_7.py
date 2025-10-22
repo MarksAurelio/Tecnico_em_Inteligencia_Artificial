@@ -28,4 +28,4 @@ segundo_elemento = lista[1]
 st.write(f"O segundo elemento da lista é: **{segundo_elemento}**")
 
 # Você também pode usar st.markdown para destacar mais
-st.markdown(f"O terceiro elemento (`lista[2]`) é: **{lista[2]}**")
+st.markdown(f"O terceiro elemento é: **{lista[2]}**")
