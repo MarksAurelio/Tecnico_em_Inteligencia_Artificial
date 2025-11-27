@@ -6,7 +6,7 @@ print("2. Listar Restaurante")
 print("3. Ativar Restaurante")
 print("4. Sair Restaurante")
 
-opcao = int(input("Escolha uma opção: "))
+opcao = input("Escolha uma opção: ")
 
 p1 = Restaurante(nome="Enzo", tipo_de_cozinha="Industrial", avaliacao=10, preco_medio=10.00)
 
